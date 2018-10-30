@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <title>Raumreservierung</title>
+</head>
+
+<body>
+<header>
+    <h1>Raumreservierung</h1>
+    <img src="media/planet.png" width="60" height="50" alt="Logo">
+</header>
+
+<nav>
+    <ul>
+        <li><a href="/Praktikum_Projekt_03/index.html">Index</a></li>
+        <li><a href="/Praktikum_Projekt_03/booking.html">Buchen</a></li>
+
+        <li><a href="/Praktikum_Projekt_03/raeume/001.html">Raum001</a></li>
+
+
+        <li><a href="/Praktikum_Projekt_03/raeume/buchungen/001Test01.html">Raum001, R1</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <form> <!-- Es wird nur eine einzelne Nummer gesendet, und der user möchte möglicherweise wieder auf das Suchergebnis zurückgreifen, daher ist GET besser -->
+        <fieldset>
+            <legend>Raumsuche</legend>
+            <label for="searchfor">Raumnummer:</label>
+            <!--<input id="searchfor" name="raum">-->
+            <input type="number" id="searchfor" name="raum">
+            <input type="submit" value="Finden">
+        </fieldset>
+    </form>
+
+    <h2>Räume</h2>
+
+    <table>
+        <tr><th>Nummer</th><th>Bezeichnung</th><th>Gebäude</th></tr>
+        <tr><td><a href="raeume/001.html">001</a></td><td>Hörsaal</td><td>EFS42</td></tr>
+    </table>
+
+
+
+</main>
+
+<aside>
+    <p>01.01.1970 : Testmeldung</p>
+</aside>
+
+<footer>
+    <small>&copy;Nicole Pathun <a href="mailto:nicole.pathun001@stud.dortmund.de">nicole.pathun001@stud.dortmund.de</a></small>
+</footer>
+</body>
+
+</html>
