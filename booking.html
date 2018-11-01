@@ -14,10 +14,10 @@
             <li><a href="/Praktikum_Projekt_03/index.html">Index</a></li>
             <li><a href="/Praktikum_Projekt_03/booking.html">Buchen</a></li>
 
-            <li><a href="/Praktikum_Projekt_03/raeume/001.html">Raum001</a></li>
+            <li><a href="/Praktikum_Projekt_03/raeume/001.html">A.E.01</a></li>
 
 
-            <li><a href="/Praktikum_Projekt_03/raeume/buchungen/001Test01.html">Raum001, R1</a></li>
+            <li><a href="/Praktikum_Projekt_03/raeume/buchungen/001Test01.html">A.E.01, R1</a></li>
 
         </ul>
     </nav>
@@ -25,7 +25,9 @@
     <main>
 
         <form method="post"><!--Wir senden evtl. sensitive Daten, und der text in der textarea ist möglicherweise zu lang für get-->
-            <label for="raumnummer">Raumnummer</label><select id="raumnummer" name="raumnummer" autocomplete="off"><option value="Raum001" selected>Raum001</option></select><br>
+            <label for="raumnummer">Raumnummer</label><input id="raumnummer" list="raumliste"></br>
+            <!--<select list="raumliste" id="raumnummer" name="raumnummer" autocomplete="off"><option value="A.E.01" selected>A.E.01</option></select><br>-->
+                <datalist id="raumliste"><option>A.E.01</option></datalist>
             <label for="bezeichnung">Bezeichnung</label><input id="bezeichnung" name="bezeichnung"><br>
             <label for="datum">Datum</label><input type="date" id="datum" name="datum>"><br>
             <label for="zeitraum1"></label><input type="time" id="zeitraum1" name="zeitraum1"><label for="zeitraum2">Ende</label><input type="time" id="zeitraum2" name="zeitraum2"><br>
